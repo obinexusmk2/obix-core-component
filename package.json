@@ -1,5 +1,5 @@
 {
-  "name": "@obinexusltd/obix-sdk-components",
+  "name": "@obinexusltd/obix-core-component",
   "version": "0.1.0",
   "description": "OBIX base UI primitives - accessibility-first, FUD-mitigating components",
   "main": "dist/index.js",
@@ -11,8 +11,15 @@
     "test:watch": "vitest"
   },
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "__tests__",
+    "docs",
+    "README.md"
   ],
+  "directories": {
+    "doc": "docs"
+  },
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -21,9 +28,6 @@
   },
   "license": "MIT",
   "author": "OBINexus <okpalan@protonmail.com>",
-  "peerDependencies": {
-    "@obinexusltd/obix-sdk-core": "^0.1.0"
-  },
   "publishConfig": {
     "access": "public"
   }
